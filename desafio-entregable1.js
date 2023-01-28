@@ -31,18 +31,18 @@ console.log(productManager.getProducts());
 
 // Se llamará al método “addProduct” con los campos:
 productManager.addProduct({
-	title: 'Producto prueba',
-	description: 'Este es un producto prueba',
-	price: 200,
-	thumbnail: 'Sin imagen',
-	code: 'abc123',
+	title: 'Samsung galaxy a04',
+	description: '64GB',
+	price: 125000,
+	thumbnail: 'https://res.cloudinary.com/dkgywpwvf/image/upload/v1670370895/Samsung-galaxy-a04-32GB_lrrkeq.png',
+	code: 1,
 	stock: 25
 });
 
 // Se llamará el método “getProducts” nuevamente, esta vez debe aparecer el producto recién agregado
 console.error(productManager.getProducts());
 
-// Se llamará al método “addProduct” con los mismos campos de arriba, debe arrojar un error porque el código estará repetido.
+// Se llamará al método “addProduct” con los mismos campos de arriba, arrojando error porque el producto se encuentra repetido.
 productManager.addProduct({
 	title: 'Samsung galaxy a04',
 	description: '64GB',
